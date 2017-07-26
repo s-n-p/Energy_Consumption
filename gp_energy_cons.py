@@ -112,6 +112,7 @@ gp_model.score(train_X, train_Y)
 print rmse(gp_model.predict(train_X), train_Y)
 
 test_pred, test_std = gp_model.predict(test_X, return_std=True)
+
 np.save('C:/Users/spenc/Documents/COURSES/CS6961_StructuredPrediction/Energy_Consumption/GP_test_pred', test_pred)
 np.save('C:/Users/spenc/Documents/COURSES/CS6961_StructuredPrediction/Energy_Consumption/GP_test_std', test_std)
 gp_model.score(test_X, test_Y)
